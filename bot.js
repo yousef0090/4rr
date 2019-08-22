@@ -3357,10 +3357,10 @@ if(!message.channel.guild) return message.reply(' ');
 [**اسم المقدم**]:
 ${thisMessage}
  
-[**هلسيحترم القوانين؟**]:
+[**ليش يبي يكون اداره؟وش خبرته؟**]:
 ${boi}
  
-[**اسم الرتبه والسبب**]:
+[**هل سوف تضع الشعار؟ هل ستتفاعل بالسيرفر؟**]:
 ${boi2}
  
 [**تم التقديم بواسطة**]:
@@ -4533,7 +4533,7 @@ message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ['time'] })
 .then(collected =>{
    message.channel.send(`**${message.author} و ${proposed} الف الف مبروك انشاء الله تستمتعون بحياتكم الزوجية ويطول اعماركم ولا تنسون شهر العسل**`);
 })
-  .catch(collected => message.channel.send(`**السكوت علامة الرضا نقول مبرووك**`))
+  .catch(collected => message.channel.send(`**غ**`))
  
   const filte = m => m.content.startsWith("لا");
 message.channel.awaitMessages(filte, { max: 1, time: 15000, errors: ['time'] })
