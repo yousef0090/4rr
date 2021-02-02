@@ -1968,7 +1968,7 @@ client.on('message', message => {
 
 client.on('message', message =>{
     let args = message.content.split(' ');
-    let prefix = '-'; 
+    let prefix = 'S'; 
     
     if(args[0] === `-{prefix}avatar`){
         let mentions = message.mentions.members.first()
@@ -1994,7 +1994,7 @@ client.on('message', message =>{
 
 
 client.on('message' , message => {
-  var prefix = "-"
+  var prefix = "S"
   
   if (message.author.bot) return;
   if (message.content.startsWith(prefix + "contact")) {
@@ -2132,7 +2132,7 @@ client.on('message', message => {
 });
 
 client.on("message", message => {
-    const prefix = "-"
+    const prefix = "S"
               
           if(!message.channel.guild) return;
    if(message.author.bot) return;
@@ -2662,7 +2662,7 @@ client.on('guildCreate', guild => {
 
 const devs = ["524901565472047116"]
  
-const adminprefix = "#";
+const adminprefix = "S";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
@@ -3003,7 +3003,7 @@ if (message.content.startsWith(prefix+"cv")) {
         }
 });
 
-const perfix = '$';
+const perfix = 'S';
 client.on('message', msg => {
  if (msg.content.startsWith(prefix + 'send')) {
       let args = msg.content.split(' ').slice(1)
@@ -3038,7 +3038,7 @@ var cats = [
          var cat = new Discord.RichEmbed()
 .setImage(cats[Math.floor(Math.random() * cats.length)])
 .setColor(0xd3d0c4)
-   .setFooter(`WESO.Bot`)
+   .setFooter(`DeMoN`)
 message.channel.sendEmbed(cat);
 
     }
@@ -3077,17 +3077,6 @@ client.on('message' , message => {
 }
 });
   
-client.on('typingStart', (ch, user) => {
-      if(user.presence.status === 'offline') {
-
-          ch.send(`${user}☹ هاهاهاا , كشفتك وانت تكتب ي اوف لاين✉`)
-          .then(msg => {
-              msg.delete(10000)
-          })
-      }
-  })
-
-
    
    client.on('message', message => {
      if(!message.channel.guild) return;
